@@ -18,7 +18,7 @@ public class HerosAnchorOptimizerClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-
+		ModBlocks.initialize();
 		// Set block render layers for custom blocks
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FAKE_ANCHOR, RenderLayer.getTranslucent());
 
